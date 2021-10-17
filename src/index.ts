@@ -1,0 +1,1 @@
+export { PgMigrator } from './pg-migrator';
