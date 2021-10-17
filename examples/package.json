@@ -1,0 +1,41 @@
+{
+    "name": "@eigenspace/pg-migrator-example",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "types": "src/index.ts",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eigenspace/db-migrator",
+        "directory": "examples/pg-migrator-example"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "scripts": {
+        "lint": "yarn lint:code",
+        "lint:code": "eslint --ext .js,.ts --fix",
+        "compose:start": "docker-compose up -d",
+        "compose:stop": "docker-compose down"
+    },
+    "dependencies": {
+        "@eigenspace/pg-migrator": "1.0.1",
+        "pg": "8.5.1"
+    },
+    "devDependencies": {
+        "@types/node": "16.10.1",
+        "@types/pg": "7.14.7",
+        "ts-node": "10.2.1",
+        "typescript": "4.4.3"
+    },
+    "license": "MIT",
+    "keywords": [
+        "migrator",
+        "migration",
+        "db",
+        "liquibase",
+        "sql",
+        "changelog",
+        "changeset"
+    ]
+}

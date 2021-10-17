@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  pg-migrator-db:
+    image: postgres:11.11-alpine
+    container_name: pg-migrator-db
+    hostname: pg-migrator-db
+    ports:
+      - 5432:5432
+    volumes:
+      - pg-migrator-db-data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: playground
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pgP@sS!|0D
+
+volumes:
+  pg-migrator-db-data:
